@@ -8,10 +8,7 @@ def sampleprint(P,k=5):
         print " ".join([";".join([x.name() for x in p.lemmas()]), ":", p.definition()])
 
 def readin(infile):
-    words = set()
-    for l in open(infile).readlines():
-        words.add(l.strip().split(" ")[0])
-    return sorted(words)
+    return [line.rstrip() for line in open(infile).readlines()]
 
 P = []
 for ss in wn.all_synsets("n"): 
@@ -26,9 +23,8 @@ for ss in wn.all_synsets("a"):
 sampleprint(P)
 
 
+instincts = readin("instincts.txt")
+knacks = readin("knacks.txt")
 
-female = readin("female.txt")
-male = readin("male.txt")
-surname = readin("surname.txt")
-
-print(random.choice(surname),"{", random.choice(female),",",random.choice(male),"}")
+print "Instinct: " + random.choice(instincts)
+print "Knack: " + random.choice(knacks)
