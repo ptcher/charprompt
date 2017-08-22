@@ -14,17 +14,13 @@ professions = []
 for ss in wn.all_synsets("n"): 
     if ss.lexname() == "noun.person" and str(ss.definition).count("inhabit") < 1 and str(ss.definition).count("living") < 1 and len(ss.instance_hypernyms()) < 1:
         professions.append(ss)
-sampleprint(professions, 1)
 
-
-adjectives = []
-for ss in wn.all_synsets("a"):
-    adjectives.append(ss)
-sampleprint(adjectives, 3)
-
+adjectives = list(wn.all_synsets("a"))
 
 instincts = readin("instincts.txt")
 knacks = readin("knacks.txt")
 
+sampleprint(professions, 1)
+sampleprint(adjectives, 3)
 print "Instinct: " + random.choice(instincts)
 print "Knack: " + random.choice(knacks)
