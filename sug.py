@@ -1,22 +1,6 @@
 from nltk.corpus import wordnet as wn
 import random
 
-#for p in wn.synset('person.n.01').hyponyms():
-#    print ";".join([x.name for x in p.lemmas]),":",p.definition
-
-
-#D = {}
-#SSS = ["secret_agent.n.01", "person.n.01", "professional.n.01", "adult.n.01", "communicator.n.01", "enlisted_person.n.01", "scholar.n.01", "woman.n.01","man.n.01" ]
-SSS = ["Pinchas_Zukerman.n.01"]
-#for ss in SSS:
-#    print wn.synset(ss).instance_hypernyms()
-#   #for p in wn.synset(ss).hyponyms():
-#   #     D[p] = ""
-#   #     print ss, len(wn.synset(ss).hyponyms())
-
-#print len(D.keys())
-
-
 
 def sampleprint(P,k=5):
     for i in range(5):
