@@ -5,7 +5,7 @@ import random
 def sampleprint(P,k=5):
     for i in range(5):
         p = random.choice(P)
-        print(";".join([x.name() for x in p.lemmas()]), ":", p.definition())
+        print " ".join([";".join([x.name() for x in p.lemmas()]), ":", p.definition()])
 
 def readin(infile):
     words = set()
