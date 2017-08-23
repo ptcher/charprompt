@@ -6,7 +6,7 @@ from timeit import timeit
 def sampleprint(P,k=5):
     for _ in range(k):
         p = random.choice(P)
-        print " ".join([";".join([x.name() for x in p.lemmas()]), ":", p.definition()])
+        print "%s: %s " % (";".join([x.name() for x in p.lemmas()]), p.definition())
 
 def readin(infile):
     return [line.rstrip() for line in open(infile).readlines()]
@@ -23,5 +23,5 @@ knacks = readin("knacks.txt")
 
 sampleprint(professions, 1)
 sampleprint(adjectives, 3)
-print "Instinct: " + random.choice(instincts)
-print "Knack: " + random.choice(knacks)
+print "Instinct: %s" % random.choice(instincts)
+print "Knack: %s" % random.choice(knacks)
