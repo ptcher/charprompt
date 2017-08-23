@@ -1,7 +1,5 @@
 from nltk.corpus import wordnet as wn
 import random
-from timeit import timeit
-
 
 def sampleprint(P,k=5):
     for _ in range(k):
@@ -13,8 +11,7 @@ def readin(infile):
 
 professions = [ss for ss in wn.all_synsets("n") if 
         ss.lexname() == "noun.person" and str(ss.definition).count("inhabit") < 1 and 
-        str(ss.definition).count("living") < 1 and 
-        len(ss.instance_hypernyms()) < 1]
+        str(ss.definition).count("living") < 1 and len(ss.instance_hypernyms()) < 1]
 
 adjectives = list(wn.all_synsets("a"))
 
