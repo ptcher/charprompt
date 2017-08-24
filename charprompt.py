@@ -10,8 +10,12 @@ def readin(infile):
     return [line.rstrip() for line in open(infile).readlines()]
 
 professions = [ss for ss in wn.all_synsets("n") if 
-        ss.lexname() == "noun.person" and str(ss.definition).count("inhabit") < 1 and 
-        str(ss.definition).count("living") < 1 and len(ss.instance_hypernyms()) < 1]
+        ss.lexname() == "noun.person" and 
+        str(ss.definition).count("inhabit") < 1 and 
+        str(ss.definition).count("living") < 1 and 
+        str(ss.definition).count("native") < 1 and
+        len(ss.instance_hypernyms()) < 1
+        ]
 
 adjectives = list(wn.all_synsets("a"))
 
