@@ -23,6 +23,7 @@ adjectives = list(wn.all_synsets("a"))
 
 instincts = readin("instincts.txt")
 knacks = readin("knacks.txt")
+names = readin("names.txt")
 
 while True:
     try:
@@ -32,6 +33,7 @@ while True:
         sampleprint(adjectives, 3)
         print "Instinct: %s" % random.choice(instincts) 
         print "Knack: %s" % random.choice(knacks) 
+        print "Name: %s" % random.choice(names)
         print ""
     except:
         print "\nBye!"
