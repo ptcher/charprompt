@@ -1,7 +1,8 @@
 Ageapol
 Anet
-Arne
+Arn
 Asmos
+Aphra
 Brand
 Cathy
 Charon
@@ -11,6 +12,7 @@ Erold
 Estil
 Firenze
 Gorham
+Hague
 Headmeat
 Hugh
 Iarad
@@ -18,7 +20,9 @@ Isr
 Jean-Sol
 Leah
 Leath
+Nägel
 Neat
+Obed
 Ometia
 Polya
 Pondus
@@ -27,4 +31,4 @@ Soma
 Weik
 Yahid
 Zheng
-Zzrtt
+Zazaratt
