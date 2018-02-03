@@ -31,8 +31,10 @@ while True:
         print ""
         sampleprint(professions, 1)
         sampleprint(adjectives, 3)
+        print ""
         print "Instinct: %s" % random.choice(instincts) 
         print "Knack: %s" % random.choice(knacks) 
+        print ""
         print "Name: %s" % random.choice(names)
         print ""
     except:
